@@ -5,7 +5,6 @@ const { Comment } = require('./models/comment');
 
 const app = express();
 
-
 app.get('/', (req, res) => {
     res.send({hi: 'there'});
 });

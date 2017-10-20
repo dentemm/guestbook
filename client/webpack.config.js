@@ -13,5 +13,8 @@ module.exports = {
             exclude: /node_modules/
         }]
     },
-    devTool: 'cheap-module-eval-source-map'
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: path.join(__dirname, 'public'),
+    }
 };

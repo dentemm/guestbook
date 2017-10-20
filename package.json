@@ -7,8 +7,14 @@
     "express": "^4.16.2",
     "mongoose": "^4.12.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.12.1"
+  },
   "scripts": {
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
